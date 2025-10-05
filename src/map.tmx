@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="36">
  <tileset firstgid="1" name="Tileset - Element fond" tilewidth="32" tileheight="32" tilecount="64" columns="8">
-  <image source="1 Tiles/FieldsTileset.png" width="256" height="256"/>
+  <image source="../mapMaker/ressources/1 Tiles/FieldsTileset.png" width="256" height="256"/>
  </tileset>
  <tileset firstgid="65" name="Tileset - Limite terrains" tilewidth="32" tileheight="32" tilecount="64" columns="8">
-  <image source="1.1 Tiles/Tileset2.png" width="256" height="256"/>
+  <image source="../mapMaker/ressources/1.1 Tiles/Tileset2.png" width="256" height="256"/>
  </tileset>
  <tileset firstgid="129" name="Maisons" tilewidth="156" tileheight="157" tilecount="4" columns="0">
   <grid orientation="orthogonal" width="1" height="1"/>
@@ -123,16 +123,16 @@
    <image source="../mapMaker/ressources/2 Objects/4 Box/1.png" width="20" height="22"/>
   </tile>
   <tile id="1">
-   <image source="2 Objects/4 Box/3.png" width="16" height="21"/>
+   <image source="../mapMaker/ressources/2 Objects/4 Box/3.png" width="16" height="21"/>
   </tile>
   <tile id="2">
-   <image source="2 Objects/4 Box/4.png" width="16" height="22"/>
+   <image source="../mapMaker/ressources/2 Objects/4 Box/4.png" width="16" height="22"/>
   </tile>
   <tile id="3">
-   <image source="2 Objects/4 Box/5.png" width="18" height="25"/>
+   <image source="../mapMaker/ressources/2 Objects/4 Box/5.png" width="18" height="25"/>
   </tile>
   <tile id="4">
-   <image source="2 Objects/4 Box/1.png" width="20" height="22"/>
+   <image source="../mapMaker/ressources/2 Objects/4 Box/1.png" width="20" height="22"/>
   </tile>
  </tileset>
  <tileset firstgid="167" name="Grass" tilewidth="9" tileheight="10" tilecount="6" columns="0">
@@ -170,6 +170,9 @@
   <tile id="3">
    <image source="../mapMaker/ressources/2 Objects/6 Tent/1.png" width="73" height="65"/>
   </tile>
+ </tileset>
+ <tileset firstgid="177" name="FieldsTileset" tilewidth="32" tileheight="32" tilecount="64" columns="8">
+  <image source="../mapMaker/ressources/1 Tiles/FieldsTileset.png" width="256" height="256"/>
  </tileset>
  <group id="16" name="Background - Au dessus">
   <layer id="1" name="Ground" width="30" height="20">
@@ -396,7 +399,7 @@
   </group>
  </group>
  <group id="9" name="Décors"/>
- <objectgroup id="15" name="Collisions" visible="0">
+ <objectgroup id="15" name="Collisions">
   <properties>
    <property name="solid" type="bool" value="true"/>
   </properties>
