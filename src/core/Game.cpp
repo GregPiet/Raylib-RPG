@@ -2,6 +2,7 @@
 #include "raylib.h"
 
 void Game::Init() {
+    
     InitWindow(1280, 720, "RPG Game");
     SetTargetFPS(60);
 
@@ -10,8 +11,13 @@ void Game::Init() {
                   "assets/maps/map_foreground.png",
                   "assets/maps/map.tmx");
 
+    // Ajuste dynamiquement la taille de la fenêtre en fonction des dimensions de la carte.
+    if (map.background.id != 0) {
+        SetWindowSize(map.background.width, map.background.height);
+    }
     InitPlayer(player, 100, 100);
 }
+
 
 void Game::Update() {
     UpdatePlayer(player, map.collisions);
