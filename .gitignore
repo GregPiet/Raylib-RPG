@@ -1,0 +1,22 @@
+# Fichiers temporaires / binaires
+*.exe
+*.o
+*.obj
+*.dll
+*.log
+
+# Répertoires de build
+obj/
+build/
+
+# VSCode
+.vscode/
+.vs/
+
+# Raylib et devkit
+w64devkit/
+raylib/
+
+# Sauvegardes
+*.bak
+*.tmp
