@@ -25,24 +25,24 @@ endif
 # === INCLUDES ===
 INCLUDE_PATHS = -I. \
     -Isrc \
-    -Isrc/core \
-    -Isrc/world \
-    -Isrc/entities \
-    -Isrc/utils \
-    -Isrc/pugixml \
+    -Isrc/Core \
+    -Isrc/Map \
+    -Isrc/Player \
+    -Isrc/Render \
+    -Isrc/Game \
     -I$(RAYLIB_PATH)/src \
     -I$(RAYLIB_PATH)/src/external
 
 # === SOURCES ===
 OBJS = \
     src/main.cpp \
-    src/core/Game.cpp \
-    src/world/Map.cpp \
-    src/world/Collision.cpp \
-    src/entities/Player.cpp \
-    src/utils/Utils.cpp \
-    src/pugixml.cpp
-
+    src/Core/ResourceManager.cpp \
+    src/Map/MapLoader.cpp \
+    src/Map/TileGenerator.cpp \
+    src/Map/CollisionSystem.cpp \
+    src/Player/Player.cpp \
+    src/Render/RenderSystem.cpp \
+    src/Game/Game.cpp
 
 
 # === LIBRAIRIES ===
