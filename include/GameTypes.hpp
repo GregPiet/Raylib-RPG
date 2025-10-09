@@ -1,88 +1,14 @@
-//==============================================================================
-// DATA STRUCTURES
-//==============================================================================
+#pragma once
 
-#include <vector>
-#include <Raylib.h> 
 #include <map>
+#include <vector>
 
-// Collision shape definition
-struct CollisionShape {
-    ShapeType type = ShapeType::Unknown;
-    std::vector<Vector2> points;
-    Rectangle rect{0, 0, 0, 0};
-};
-
-// Positioned collision in world space
-struct PositionedCollision {
-    CollisionShape shape;
-    Vector2 position;
-};
-
-// Tileset data structure
-struct TileSet {
-    int firstGid = 0;
-    int tileWidth = 0;
-    int tileHeight = 0;
-    int columns = 1;
-    bool isAtlas = true;
-    
-    // Tile offset (optional in Tiled)
-    int tileOffsetX = 0;
-    int tileOffsetY = 0;
-    
-    // Atlas texture (spritesheet)
-    Texture2D* atlas = nullptr;
-    
-    // Collection of individual images
-    std::map<int, Texture2D*> tileImages;
-};
-
-// Tile layer data
-struct TileLayer {
-    std::vector<int> data;
-    int width = 0;
-    int height = 0;
-};
-
-// Individual tile for rendering
-struct Tile {
-    Rectangle source{0, 0, 0, 0};
-    Vector2 destination{0, 0};
-    const TileSet* tileset = nullptr;
-    float sortingY = 0.0f;
-    int localId = 0;
-    bool isImageCollection = false;
-    float drawOffsetY = 0.0f;
-};
-
-// Animation data
-struct Animation {
-    Texture2D* texture = nullptr;
-    int frameCount = 0;
-    int frameWidth = 0;
-    int frameHeight = 0;
-    int currentFrame = 0;
-    float frameTime = 0.1f;
-    float timer = 0.0f;
-};
-
-// TMJ Map structure
-struct TMJMap {
-    int width = 0;
-    int height = 0;
-    int tileWidth = 0;
-    int tileHeight = 0;
-    std::vector<TileSet> tilesets;
-    std::vector<TileLayer> backgroundLayers;
-    std::vector<TileLayer> otherLayers;
-    std::map<int, std::vector<CollisionShape>> tileCollisions;
-};
-
+#include <raylib.h>
 
 //==============================================================================
 // ENUMERATIONS
 //==============================================================================
+
 enum class ShapeType {
     Rectangle,
     Ellipse,
@@ -109,46 +35,37 @@ enum class PlayerDirection {
 // DATA STRUCTURES
 //==============================================================================
 
-// Collision shape definition
 struct CollisionShape {
     ShapeType type = ShapeType::Unknown;
     std::vector<Vector2> points;
     Rectangle rect{0, 0, 0, 0};
 };
 
-// Positioned collision in world space
 struct PositionedCollision {
     CollisionShape shape;
-    Vector2 position;
+    Vector2 position{0, 0};
 };
 
-// Tileset data structure
 struct TileSet {
     int firstGid = 0;
     int tileWidth = 0;
     int tileHeight = 0;
     int columns = 1;
     bool isAtlas = true;
-    
-    // Tile offset (optional in Tiled)
+
     int tileOffsetX = 0;
     int tileOffsetY = 0;
-    
-    // Atlas texture (spritesheet)
+
     Texture2D* atlas = nullptr;
-    
-    // Collection of individual images
     std::map<int, Texture2D*> tileImages;
 };
 
-// Tile layer data
 struct TileLayer {
     std::vector<int> data;
     int width = 0;
     int height = 0;
 };
 
-// Individual tile for rendering
 struct Tile {
     Rectangle source{0, 0, 0, 0};
     Vector2 destination{0, 0};
@@ -159,7 +76,6 @@ struct Tile {
     float drawOffsetY = 0.0f;
 };
 
-// Animation data
 struct Animation {
     Texture2D* texture = nullptr;
     int frameCount = 0;
@@ -170,7 +86,6 @@ struct Animation {
     float timer = 0.0f;
 };
 
-// TMJ Map structure
 struct TMJMap {
     int width = 0;
     int height = 0;
@@ -181,3 +96,4 @@ struct TMJMap {
     std::vector<TileLayer> otherLayers;
     std::map<int, std::vector<CollisionShape>> tileCollisions;
 };
+
