@@ -5,20 +5,71 @@
  </tileset>
  <tileset firstgid="65" name="Tileset - Limite terrains" tilewidth="32" tileheight="32" tilecount="64" columns="8">
   <image source="../../mapMaker/ressources/1.1 Tiles/Tileset2.png" width="256" height="256"/>
+  <tile id="8">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="5" y="24.3333" width="27" height="7"/>
+   </objectgroup>
+  </tile>
+  <tile id="9">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="-1.33333" y="23" width="33" height="5.66667"/>
+   </objectgroup>
+  </tile>
+  <tile id="10">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="-0.333333" y="24" width="32.6667" height="4.66667"/>
+   </objectgroup>
+  </tile>
+  <tile id="11">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0.333333" y="23.3333" width="32.3333" height="4"/>
+   </objectgroup>
+  </tile>
+  <tile id="13">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="17.3333" y="0.666667" width="9" height="30.6667"/>
+   </objectgroup>
+  </tile>
+  <tile id="21">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="15.6667" y="0.333333" width="11" height="30.6667"/>
+   </objectgroup>
+  </tile>
+  <tile id="29">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="15.6667" y="0" width="10.3333" height="31.6667"/>
+   </objectgroup>
+  </tile>
+  <tile id="37">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="15" y="0.666667" width="10.6667" height="31.3333"/>
+   </objectgroup>
+  </tile>
  </tileset>
  <tileset firstgid="129" name="Maisons" tilewidth="156" tileheight="157" tilecount="4" columns="0">
   <grid orientation="orthogonal" width="1" height="1"/>
   <tile id="0">
    <image source="2 Objects/7 House/1.png" width="116" height="112"/>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="9.33333" y="69.6667" width="97" height="40.6667"/>
+   </objectgroup>
   </tile>
   <tile id="1">
    <image source="2 Objects/7 House/2.png" width="156" height="135"/>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="9" y="98.3333" width="95" height="34.6667"/>
+    <object id="2" x="133.667" y="124.667" width="14" height="9.33333"/>
+   </objectgroup>
   </tile>
   <tile id="2">
    <image source="2 Objects/7 House/3.png" width="147" height="157"/>
   </tile>
   <tile id="3">
    <image source="2 Objects/7 House/4.png" width="154" height="149"/>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="44" y="106.667" width="103" height="39.6667"/>
+    <object id="2" x="7.66667" y="145" width="6.66667" height="2"/>
+   </objectgroup>
   </tile>
  </tileset>
  <tileset firstgid="133" name="Shadow" tilewidth="95" tileheight="62" tilecount="6" columns="0">
@@ -67,6 +118,9 @@
   <grid orientation="orthogonal" width="1" height="1"/>
   <tile id="0">
    <image source="2 Objects/3 Decor/1.png" width="48" height="26"/>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="1" y="19.6667" width="40.3333" height="4.33333"/>
+   </objectgroup>
   </tile>
   <tile id="1">
    <image source="2 Objects/3 Decor/2.png" width="41" height="38"/>
@@ -103,6 +157,9 @@
   </tile>
   <tile id="12">
    <image source="2 Objects/3 Decor/13.png" width="43" height="54"/>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="5.66667" y="40.6667" width="33.3333" height="12.3333"/>
+   </objectgroup>
   </tile>
   <tile id="13">
    <image source="2 Objects/3 Decor/14.png" width="23" height="21"/>
@@ -117,13 +174,21 @@
    <image source="2 Objects/3 Decor/17.png" width="23" height="21"/>
   </tile>
  </tileset>
- <tileset firstgid="179" name="Box" tilewidth="20" tileheight="25" tilecount="5" columns="0">
+ <tileset firstgid="162" name="Box" tilewidth="20" tileheight="25" tilecount="5" columns="0">
   <grid orientation="orthogonal" width="1" height="1"/>
   <tile id="0">
    <image source="2 Objects/4 Box/1.png" width="20" height="22"/>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="1.33333" y="17.6667" width="17" height="4.33333">
+     <ellipse/>
+    </object>
+   </objectgroup>
   </tile>
   <tile id="1">
    <image source="2 Objects/4 Box/3.png" width="16" height="21"/>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0.333333" y="15" width="14.3333" height="5.66667"/>
+   </objectgroup>
   </tile>
   <tile id="2">
    <image source="2 Objects/4 Box/4.png" width="16" height="22"/>
@@ -133,9 +198,14 @@
   </tile>
   <tile id="4">
    <image source="2 Objects/4 Box/1.png" width="20" height="22"/>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="1.33333" y="16.6667" width="17" height="4">
+     <ellipse/>
+    </object>
+   </objectgroup>
   </tile>
  </tileset>
- <tileset firstgid="184" name="Grass" tilewidth="9" tileheight="10" tilecount="6" columns="0">
+ <tileset firstgid="167" name="Grass" tilewidth="9" tileheight="10" tilecount="6" columns="0">
   <grid orientation="orthogonal" width="1" height="1"/>
   <tile id="0">
    <image source="2 Objects/5 Grass/4.png" width="8" height="5"/>
@@ -156,7 +226,7 @@
    <image source="2 Objects/5 Grass/3.png" width="5" height="7"/>
   </tile>
  </tileset>
- <tileset firstgid="190" name="Tent" tilewidth="73" tileheight="71" tilecount="4" columns="0">
+ <tileset firstgid="173" name="Tent" tilewidth="73" tileheight="71" tilecount="4" columns="0">
   <grid orientation="orthogonal" width="1" height="1"/>
   <tile id="0">
    <image source="2 Objects/6 Tent/2.png" width="64" height="61"/>
@@ -166,6 +236,12 @@
   </tile>
   <tile id="2">
    <image source="2 Objects/6 Tent/4.png" width="64" height="71"/>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="4.33333" y="66" width="4.66667" height="4"/>
+    <object id="2" x="54.6667" y="67.3333" width="4.66667" height="2"/>
+    <object id="3" x="55.3333" y="47.6667" width="4.66667" height="2"/>
+    <object id="4" x="3" y="47.6667" width="5.66667" height="1.66667"/>
+   </objectgroup>
   </tile>
   <tile id="3">
    <image source="2 Objects/6 Tent/1.png" width="73" height="65"/>
@@ -223,18 +299,18 @@
   <layer id="11" name="Grass" width="30" height="20">
    <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,187,0,187,187,0,0,0,185,0,0,0,0,0,0,0,0,185,0,0,0,0,
+0,0,0,0,0,0,0,0,0,170,0,170,170,0,0,0,168,0,0,0,0,0,0,0,0,168,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,187,0,0,0,0,0,0,0,0,187,184,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,170,0,0,0,0,0,0,0,0,170,167,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,184,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,185,0,0,187,0,0,0,0,187,185,0,0,0,0,0,0,0,185,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,187,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,187,0,0,0,0,0,
-0,0,0,184,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,187,0,0,0,0,0,0,0,0,0,0,0,
-0,0,185,0,0,0,185,0,0,187,0,185,0,0,0,0,0,0,0,0,0,0,0,184,0,185,0,0,0,0,
-0,0,0,0,0,0,0,0,0,184,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,184,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,167,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,168,0,0,170,0,0,0,0,170,168,0,0,0,0,0,0,0,168,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,170,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,170,0,0,0,0,0,
+0,0,0,167,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,170,0,0,0,0,0,0,0,0,0,0,0,
+0,0,168,0,0,0,168,0,0,170,0,168,0,0,0,0,0,0,0,0,0,0,0,167,0,168,0,0,0,0,
+0,0,0,0,0,0,0,0,0,167,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,167,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -320,8 +396,8 @@
   </layer>
   <layer id="12" name="Box" width="30" height="20">
    <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,179,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,179,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,162,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,162,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -331,7 +407,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,179,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,162,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -345,7 +421,7 @@
   <layer id="8" name="Tent" width="30" height="20">
    <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,193,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,176,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -355,7 +431,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,192,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,175,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,

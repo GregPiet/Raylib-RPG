@@ -36,11 +36,14 @@ INCLUDE_PATHS = -I. \
 # === SOURCES ===
 OBJS = \
     src/main.cpp \
+    src/core/FileUtils.cpp \
     src/core/Game.cpp \
-    src/world/Map.cpp \
-    src/world/Collision.cpp \
+    src/core/ResourceManager.cpp \
     src/entities/Player.cpp \
-    src/utils/Utils.cpp \
+    src/map/CollisionSystem.cpp \
+    src/map/MapLoader.cpp \
+    src/map/TileGenerator.cpp \
+    src/render/RenderSystem.cpp \
     src/pugixml.cpp
 
 
